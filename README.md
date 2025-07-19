@@ -18,144 +18,95 @@ Your goal is to transform the entire board into #.
 
 Remember that if you transform the entire board and have pending sacrifices, it means it is not a valid solution!
 
-Return a list with all your moves, with (x,y) position of the start and end of each word and (x,y) of each sacrifice.
-
 # Generated Puzzle
 
 ```
-O L O K K K
-L K O O K L
-K O L L L O
-L O K L O K
-O L O O K K
-K O L K O L
+L K O L L
+K K O L L
+L K O L J
+O K O L #
+L J K O L
 ```
 
 # Solution
 
 ```
-O L O K K K
-L K O O K L
-K O L L L O
-L O K L O K
-O L O O K K
-K O L K O L
+L K O L L
+K K O L L
+L K O L J
+O K O L #
+L J K O L
 ```
 
 ## Move
 
-Start: (3, 2), End: (5, 2), Sacrifice: (1, 2)
+Start: (2, 1), End: (2, 3), Sacrifice: (2, 0)
 
 ```
-O L O K K K
-L K # O K L
-K O L L L O
-L O # L O K
-O L # O K K
-K O # K O L
-```
-
-## Move
-
-Start: (2, 4), End: (4, 4), Sacrifice: (5, 1)
-
-```
-O L O K K K
-L K # O K L
-K O L L # O
-L O # L # K
-O L # O # K
-K # # K O L
+L K O L L
+K K O L L
+# # # # J
+O K O L #
+L J K O L
 ```
 
 ## Move
 
-Start: (0, 3), End: (2, 3), Sacrifice: (0, 5)
+Start: (1, 0), End: (4, 0), Sacrifice: (1, 4)
 
 ```
-O L O # K #
-L K # # K L
-K O L # # O
-L O # L # K
-O L # O # K
-K # # K O L
-```
-
-## Move
-
-Start: (3, 3), End: (5, 3), Sacrifice: (4, 5)
-
-```
-O L O # K #
-L K # # K L
-K O L # # O
-L O # # # K
-O L # # # #
-K # # # O L
+L K O L L
+# K O L #
+# # # # J
+# K O L #
+# J K O L
 ```
 
 ## Move
 
-Start: (2, 0), End: (2, 2), Sacrifice: (1, 0)
+Start: (3, 1), End: (3, 3), Sacrifice: (0, 0)
 
 ```
-O L O # K #
-# K # # K L
-# # # # # O
-L O # # # K
-O L # # # #
-K # # # O L
-```
-
-## Move
-
-Start: (1, 1), End: (4, 1), Sacrifice: (5, 4)
-
-```
-O L O # K #
-# # # # K L
-# # # # # O
-L # # # # K
-O # # # # #
-K # # # # L
+# K O L L
+# K O L #
+# # # # J
+# # # # #
+# J K O L
 ```
 
 ## Move
 
-Start: (1, 5), End: (3, 5), Sacrifice: (1, 4)
+Start: (4, 2), End: (4, 4), Sacrifice: (4, 1)
 
 ```
-O L O # K #
-# # # # # #
-# # # # # #
-L # # # # #
-O # # # # #
-K # # # # L
-```
-
-## Move
-
-Start: (3, 0), End: (5, 0), Sacrifice: (0, 0)
-
-```
-# L O # K #
-# # # # # #
-# # # # # #
-# # # # # #
-# # # # # #
-# # # # # L
+# K O L L
+# K O L #
+# # # # J
+# # # # #
+# # # # #
 ```
 
 ## Move
 
-Start: (0, 1), End: (0, 4), Sacrifice: (5, 5)
+Start: (0, 1), End: (0, 3), Sacrifice: (2, 4)
 
 ```
-# # # # # #
-# # # # # #
-# # # # # #
-# # # # # #
-# # # # # #
-# # # # # #
+# # # # L
+# K O L #
+# # # # #
+# # # # #
+# # # # #
+```
+
+## Move
+
+Start: (1, 1), End: (1, 3), Sacrifice: (0, 4)
+
+```
+# # # # #
+# # # # #
+# # # # #
+# # # # #
+# # # # #
 ```
 
