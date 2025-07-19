@@ -23,7 +23,7 @@ jobs:
         python-version: '3.x'
 
     - name: Generate puzzles
-      run: python puzzle_generator.py
+      run: python LOK_puzzles.py
 
     - name: Debug files
       run: |
