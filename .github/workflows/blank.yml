@@ -36,7 +36,7 @@ jobs:
       run: |
         git config --global user.name "GitHub Actions"
         git config --global user.email "actions@github.com"
-        git add README.md solucoes.md || echo "One or more files missing; skipping add"
+        git add README.md solutions.md || echo "One or more files missing; skipping add"
         git commit -m "🔄 Biweekly update: $(date +'%d/%m/%Y')" || echo "Nothing to commit; skipping"
         git pull --rebase
         git push || echo "Push failed; may be up-to-date"
