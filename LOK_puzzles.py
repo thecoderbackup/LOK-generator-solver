@@ -9,7 +9,7 @@ class Movimento:
         self.grid = grid
 
 def generate_puzzle():
-    size = 5
+    size = random.randint(5, 7)
     grid = []
     movimentos = []
     while not grid or sum(row.count('#') for row in grid) != size * size % 4:
@@ -92,6 +92,18 @@ def grid_to_str(grid):
 
 def write_readme(grid, movimentos):
     with open('README.md', 'w') as f:
+        f.write('# LOK Based Puzzle Generator\n\n')
+        f.write('This puzzle generator is inspired by the puzzle book "LOK" created by Blaž Urban Gracar under Letibus Design, and its digital adaptation "LOK Digital" developed by Icedrop Games in collaboration with Raindrinker and published by Draknek & Friends.\n\n')
+        f.write('In the original LOK, players engage in mind-bending word-search puzzles where the goal is to find keywords with special effects to black out all cells in a grid. The digital version expands this with procedural puzzles and new mechanics.\n\n')
+        f.write('References:\n')
+        f.write('- Original LOK puzzle book: [Blaž Urban Gracar\'s site](https://www.blazgracar.com/lok) and [Itch.io](https://letibus.itch.io/lok)\n')
+        f.write('- LOK Digital: [Official site](https://lok-digital.com/), [Steam](https://store.steampowered.com/app/2207440/LOK_Digital/), [Google Play](https://play.google.com/store/apps/details?id=com.IcedropGames.LOK), [App Store](https://apps.apple.com/us/app/lok-digital/id6476513210)\n\n')
+        f.write('## Descrição do Jogo\n\n')
+        f.write('Dado um tabuleiro, você deve transformar todos os símbolos em #. Para isso, encontre a palavra "LOK", que pode estar na horizontal ou vertical, e também de trás para frente (ou seja, "KOL" também é válido!). Toda vez que encontrar uma palavra, você deve sacrificar uma letra e transformá-la em # também.\n\n')
+        f.write('Se houver um # no meio da palavra, você pode ignorá-lo, ou seja, L#OK também é uma palavra válida.\n\n')
+        f.write('Seu objetivo é transformar todo o tabuleiro em #.\n\n')
+        f.write('Vale lembrar que se você transformar todo o tabuleiro e tiver sacrifícios pendentes, significa que não é uma solução válida!\n\n')
+        f.write('Retorne uma lista com todos os seus movimentos, com posição (x,y) do início e fim de cada palavra e (x,y) de cada sacrifício.\n\n')
         f.write('# Puzzle Gerado\n\n')
         f.write('```\n')
         f.write(grid_to_str(grid))
