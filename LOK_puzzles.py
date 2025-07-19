@@ -103,7 +103,6 @@ def write_readme(grid, movimentos):
         f.write('If there is a # in the middle of the word, you can ignore it, i.e., L#OK is also a valid word.\n\n')
         f.write('Your goal is to transform the entire board into #.\n\n')
         f.write('Remember that if you transform the entire board and have pending sacrifices, it means it is not a valid solution!\n\n')
-        f.write('Return a list with all your moves, with (x,y) position of the start and end of each word and (x,y) of each sacrifice.\n\n')
         f.write('# Generated Puzzle\n\n')
         f.write('```\n')
         f.write(grid_to_str(grid))
@@ -142,7 +141,6 @@ def main():
         f.write('If there is a # in the middle of the word, you can ignore it, i.e., L#OK is also a valid word.\n\n')
         f.write('Your goal is to transform the entire board into #.\n\n')
         f.write('Remember that if you transform the entire board and have pending sacrifices, it means it is not a valid solution!\n\n')
-        f.write('Return a list with all your moves, with (x,y) position of the start and end of each word and (x,y) of each sacrifice.\n\n')
     for i in range(10):
         grid, movimentos = generate_puzzle()
         write_solutions(i + 1, grid, movimentos)
