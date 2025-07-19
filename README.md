@@ -8,107 +8,154 @@ References:
 - Original LOK puzzle book: [Blaž Urban Gracar's site](https://www.blazgracar.com/lok) and [Itch.io](https://letibus.itch.io/lok)
 - LOK Digital: [Official site](https://lok-digital.com/), [Steam](https://store.steampowered.com/app/2207440/LOK_Digital/), [Google Play](https://play.google.com/store/apps/details?id=com.IcedropGames.LOK), [App Store](https://apps.apple.com/us/app/lok-digital/id6476513210)
 
-## Descrição do Jogo
+## Game Description
 
-Dado um tabuleiro, você deve transformar todos os símbolos em #. Para isso, encontre a palavra "LOK", que pode estar na horizontal ou vertical, e também de trás para frente (ou seja, "KOL" também é válido!). Toda vez que encontrar uma palavra, você deve sacrificar uma letra e transformá-la em # também.
+Given a board, you must transform all symbols into #. To do this, find the word "LOK", which can be horizontal or vertical, and also backwards (i.e., "KOL" is also valid!). Every time you find a word, you must sacrifice a letter and transform it into # as well.
 
-Se houver um # no meio da palavra, você pode ignorá-lo, ou seja, L#OK também é uma palavra válida.
+If there is a # in the middle of the word, you can ignore it, i.e., L#OK is also a valid word.
 
-Seu objetivo é transformar todo o tabuleiro em #.
+Your goal is to transform the entire board into #.
 
-Vale lembrar que se você transformar todo o tabuleiro e tiver sacrifícios pendentes, significa que não é uma solução válida!
+Remember that if you transform the entire board and have pending sacrifices, it means it is not a valid solution!
 
-Retorne uma lista com todos os seus movimentos, com posição (x,y) do início e fim de cada palavra e (x,y) de cada sacrifício.
+Return a list with all your moves, with (x,y) position of the start and end of each word and (x,y) of each sacrifice.
 
-# Puzzle Gerado
-
-```
-L L O K L
-# O O K K
-L O K J O
-K O L K K
-K K O L L
-```
-
-# Resolução
+# Generated Puzzle
 
 ```
-L L O K L
-# O O K K
-L O K J O
-K O L K K
-K K O L L
+O L O K K K
+L K O O K L
+K O L L L O
+L O K L O K
+O L O O K K
+K O L K O L
 ```
 
-## Movimento
-
-Inicio: (2, 0), Fim: (2, 2), Sacrificio: (3, 3)
+# Solution
 
 ```
-L L O K L
-# O O K K
-# # # J O
-K O L # K
-K K O L L
+O L O K K K
+L K O O K L
+K O L L L O
+L O K L O K
+O L O O K K
+K O L K O L
 ```
 
-## Movimento
+## Move
 
-Inicio: (3, 0), Fim: (3, 2), Sacrificio: (3, 4)
-
-```
-L L O K L
-# O O K K
-# # # J O
-# # # # #
-K K O L L
-```
-
-## Movimento
-
-Inicio: (0, 1), Fim: (4, 1), Sacrificio: (1, 3)
+Start: (3, 2), End: (5, 2), Sacrifice: (1, 2)
 
 ```
-L # O K L
-# # O # K
-# # # J O
-# # # # #
-K # O L L
+O L O K K K
+L K # O K L
+K O L L L O
+L O # L O K
+O L # O K K
+K O # K O L
 ```
 
-## Movimento
+## Move
 
-Inicio: (1, 4), Fim: (4, 4), Sacrificio: (2, 3)
-
-```
-L # O K L
-# # O # #
-# # # # #
-# # # # #
-K # O L #
-```
-
-## Movimento
-
-Inicio: (0, 0), Fim: (0, 3), Sacrificio: (1, 2)
+Start: (2, 4), End: (4, 4), Sacrifice: (5, 1)
 
 ```
-# # # # L
-# # # # #
-# # # # #
-# # # # #
-K # O L #
+O L O K K K
+L K # O K L
+K O L L # O
+L O # L # K
+O L # O # K
+K # # K O L
 ```
 
-## Movimento
+## Move
 
-Inicio: (4, 0), Fim: (4, 3), Sacrificio: (0, 4)
+Start: (0, 3), End: (2, 3), Sacrifice: (0, 5)
 
 ```
-# # # # #
-# # # # #
-# # # # #
-# # # # #
-# # # # #
+O L O # K #
+L K # # K L
+K O L # # O
+L O # L # K
+O L # O # K
+K # # K O L
+```
+
+## Move
+
+Start: (3, 3), End: (5, 3), Sacrifice: (4, 5)
+
+```
+O L O # K #
+L K # # K L
+K O L # # O
+L O # # # K
+O L # # # #
+K # # # O L
+```
+
+## Move
+
+Start: (2, 0), End: (2, 2), Sacrifice: (1, 0)
+
+```
+O L O # K #
+# K # # K L
+# # # # # O
+L O # # # K
+O L # # # #
+K # # # O L
+```
+
+## Move
+
+Start: (1, 1), End: (4, 1), Sacrifice: (5, 4)
+
+```
+O L O # K #
+# # # # K L
+# # # # # O
+L # # # # K
+O # # # # #
+K # # # # L
+```
+
+## Move
+
+Start: (1, 5), End: (3, 5), Sacrifice: (1, 4)
+
+```
+O L O # K #
+# # # # # #
+# # # # # #
+L # # # # #
+O # # # # #
+K # # # # L
+```
+
+## Move
+
+Start: (3, 0), End: (5, 0), Sacrifice: (0, 0)
+
+```
+# L O # K #
+# # # # # #
+# # # # # #
+# # # # # #
+# # # # # #
+# # # # # L
+```
+
+## Move
+
+Start: (0, 1), End: (0, 4), Sacrifice: (5, 5)
+
+```
+# # # # # #
+# # # # # #
+# # # # # #
+# # # # # #
+# # # # # #
+# # # # # #
 ```
 
