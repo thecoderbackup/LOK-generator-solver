@@ -21,92 +21,139 @@ Remember that if you transform the entire board and have pending sacrifices, it 
 # Generated Puzzle
 
 ```
-K L # L K
-K O L O K
-O K O L K
-L K O K O
-L K O L L
+K K O L K L
+O O L L K K
+L L L O K O
+O O O K O L
+K O K O O O
+K J J K L K
 ```
 
 # Solution
 
 ```
-K L # L K
-K O L O K
-O K O L K
-L K O K O
-L K O L L
+K K O L K L
+O O L L K K
+L L L O K O
+O O O K O L
+K O K O O O
+K J J K L K
 ```
 
 ## Move
 
-Start: (2, 1), End: (2, 3), Sacrifice: (3, 2)
+Start: (0, 1), End: (2, 1), Sacrifice: (1, 5)
 
 ```
-K L # L K
-K O L O K
-O # # # K
-L K # K O
-L K O L L
-```
-
-## Move
-
-Start: (1, 0), End: (3, 0), Sacrifice: (3, 3)
-
-```
-K L # L K
-# O L O K
-# # # # K
-# K # # O
-L K O L L
+K # O L K L
+O # L L K #
+L # L O K O
+O O O K O L
+K O K O O O
+K J J K L K
 ```
 
 ## Move
 
-Start: (4, 1), End: (4, 3), Sacrifice: (0, 4)
+Start: (2, 2), End: (2, 4), Sacrifice: (1, 4)
 
 ```
-K L # L #
-# O L O K
-# # # # K
-# K # # O
-L # # # L
-```
-
-## Move
-
-Start: (2, 4), End: (4, 4), Sacrifice: (0, 0)
-
-```
-# L # L #
-# O L O K
-# # # # #
-# K # # #
-L # # # #
+K # O L K L
+O # L L # #
+L # # # # O
+O O O K O L
+K O K O O O
+K J J K L K
 ```
 
 ## Move
 
-Start: (0, 1), End: (3, 1), Sacrifice: (4, 0)
+Start: (0, 0), End: (0, 3), Sacrifice: (5, 1)
 
 ```
-# # # L #
-# # L O K
-# # # # #
-# # # # #
-# # # # #
+# # # # K L
+O # L L # #
+L # # # # O
+O O O K O L
+K O K O O O
+K # J K L K
 ```
 
 ## Move
 
-Start: (1, 2), End: (1, 4), Sacrifice: (0, 3)
+Start: (3, 3), End: (3, 5), Sacrifice: (1, 0)
 
 ```
-# # # # #
-# # # # #
-# # # # #
-# # # # #
-# # # # #
+# # # # K L
+# # L L # #
+L # # # # O
+O O O # # #
+K O K O O O
+K # J K L K
+```
+
+## Move
+
+Start: (1, 2), End: (4, 2), Sacrifice: (4, 5)
+
+```
+# # # # K L
+# # # L # #
+L # # # # O
+O O # # # #
+K O # O O #
+K # J K L K
+```
+
+## Move
+
+Start: (1, 3), End: (5, 3), Sacrifice: (5, 0)
+
+```
+# # # # K L
+# # # # # #
+L # # # # O
+O O # # # #
+K O # # O #
+# # J # L K
+```
+
+## Move
+
+Start: (0, 5), End: (5, 5), Sacrifice: (3, 1)
+
+```
+# # # # K #
+# # # # # #
+L # # # # #
+O # # # # #
+K O # # O #
+# # J # L #
+```
+
+## Move
+
+Start: (0, 4), End: (5, 4), Sacrifice: (5, 2)
+
+```
+# # # # # #
+# # # # # #
+L # # # # #
+O # # # # #
+K O # # # #
+# # # # # #
+```
+
+## Move
+
+Start: (2, 0), End: (4, 0), Sacrifice: (4, 1)
+
+```
+# # # # # #
+# # # # # #
+# # # # # #
+# # # # # #
+# # # # # #
+# # # # # #
 ```
 
