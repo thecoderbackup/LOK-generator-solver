@@ -21,86 +21,86 @@ Remember that if you transform the entire board and have pending sacrifices, it 
 # Generated Puzzle
 
 ```
-L J K O K
-K O O L L
-J K K O L
+# L O K L
+L O K K O
+J L L O K
 K O L L O
-O J # J K
+J L O K L
 ```
 
 # Solution
 
 ```
-L J K O K
-K O O L L
-J K K O L
+# L O K L
+L O K K O
+J L L O K
 K O L L O
-O J # J K
+J L O K L
 ```
 
 ## Move
 
-Start: (2, 2), End: (2, 4), Sacrifice: (4, 1)
+Start: (3, 0), End: (3, 2), Sacrifice: (4, 0)
 
 ```
-L J K O K
-K O O L L
-J K # # #
-K O L L O
-O # # J K
-```
-
-## Move
-
-Start: (1, 4), End: (4, 4), Sacrifice: (4, 0)
-
-```
-L J K O K
-K O O L #
-J K # # #
-K O L L #
-# # # J #
+# L O K L
+L O K K O
+J L L O K
+# # # L O
+# L O K L
 ```
 
 ## Move
 
-Start: (0, 2), End: (3, 2), Sacrifice: (0, 1)
+Start: (1, 0), End: (1, 2), Sacrifice: (4, 4)
 
 ```
-L # # O K
-K O # L #
-J K # # #
-K O # L #
-# # # J #
+# L O K L
+# # # K O
+J L L O K
+# # # L O
+# L O K #
 ```
 
 ## Move
 
-Start: (1, 0), End: (1, 3), Sacrifice: (4, 3)
+Start: (1, 3), End: (3, 3), Sacrifice: (3, 4)
 
 ```
-L # # O K
+# L O K L
+# # # # O
+J L L # K
 # # # # #
-J K # # #
-K O # L #
+# L O K #
+```
+
+## Move
+
+Start: (0, 4), End: (2, 4), Sacrifice: (2, 2)
+
+```
+# L O K #
+# # # # #
+J L # # #
+# # # # #
+# L O K #
+```
+
+## Move
+
+Start: (4, 1), End: (4, 3), Sacrifice: (2, 0)
+
+```
+# L O K #
+# # # # #
+# L # # #
+# # # # #
 # # # # #
 ```
 
 ## Move
 
-Start: (0, 0), End: (0, 4), Sacrifice: (2, 1)
-
-```
-# # # # #
-# # # # #
-J # # # #
-K O # L #
-# # # # #
-```
-
-## Move
-
-Start: (3, 0), End: (3, 3), Sacrifice: (2, 0)
+Start: (0, 1), End: (0, 3), Sacrifice: (2, 1)
 
 ```
 # # # # #
