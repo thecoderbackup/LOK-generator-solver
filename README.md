@@ -21,192 +21,92 @@ Remember that if you transform the entire board and have pending sacrifices, it 
 # Generated Puzzle
 
 ```
-K K K O K K L
-L O K K O O L
-O K O L L K #
-J J K O L O L
-K K K O L L O
-O L O K K K K
-L L K O K L O
+L L J # K
+O L K J L
+L O K K K
+J O O O O
+K K L L L
 ```
 
 # Solution
 
 ```
-K K K O K K L
-L O K K O O L
-O K O L L K #
-J J K O L O L
-K K K O L L O
-O L O K K K K
-L L K O K L O
+L L J # K
+O L K J L
+L O K K K
+J O O O O
+K K L L L
 ```
 
 ## Move
 
-Start: (4, 2), End: (4, 4), Sacrifice: (5, 4)
+Start: (2, 0), End: (2, 2), Sacrifice: (0, 4)
 
 ```
-K K K O K K L
-L O K K O O L
-O K O L L K #
-J J K O L O L
-K K # # # L O
-O L O K # K K
-L L K O K L O
+L L J # #
+O L K J L
+# # # K K
+J O O O O
+K K L L L
 ```
 
 ## Move
 
-Start: (4, 0), End: (6, 0), Sacrifice: (6, 4)
+Start: (2, 4), End: (4, 4), Sacrifice: (0, 1)
 
 ```
-K K K O K K L
-L O K K O O L
-O K O L L K #
-J J K O L O L
-# K # # # L O
-# L O K # K K
-# L K O # L O
+L # J # #
+O L K J L
+# # # K #
+J O O O #
+K K L L #
 ```
 
 ## Move
 
-Start: (0, 4), End: (2, 4), Sacrifice: (6, 1)
+Start: (2, 3), End: (4, 3), Sacrifice: (3, 0)
 
 ```
-K K K O # K L
-L O K K # O L
-O K O L # K #
-J J K O L O L
-# K # # # L O
-# L O K # K K
-# # K O # L O
+L # J # #
+O L K J L
+# # # # #
+# O O # #
+K K L # #
 ```
 
 ## Move
 
-Start: (3, 2), End: (3, 4), Sacrifice: (0, 5)
+Start: (1, 2), End: (4, 2), Sacrifice: (1, 3)
 
 ```
-K K K O # # L
-L O K K # O L
-O K O L # K #
-J J # # # O L
-# K # # # L O
-# L O K # K K
-# # K O # L O
+L # J # #
+O L # # L
+# # # # #
+# O # # #
+K K # # #
 ```
 
 ## Move
 
-Start: (1, 0), End: (1, 2), Sacrifice: (0, 0)
+Start: (0, 0), End: (4, 0), Sacrifice: (0, 2)
 
 ```
-# K K O # # L
-# # # K # O L
-O K O L # K #
-J J # # # O L
-# K # # # L O
-# L O K # K K
-# # K O # L O
+# # # # #
+# L # # L
+# # # # #
+# O # # #
+# K # # #
 ```
 
 ## Move
 
-Start: (2, 1), End: (2, 3), Sacrifice: (4, 1)
+Start: (1, 1), End: (4, 1), Sacrifice: (1, 4)
 
 ```
-# K K O # # L
-# # # K # O L
-O # # # # K #
-J J # # # O L
-# # # # # L O
-# L O K # K K
-# # K O # L O
-```
-
-## Move
-
-Start: (2, 5), End: (4, 5), Sacrifice: (6, 6)
-
-```
-# K K O # # L
-# # # K # O L
-O # # # # # #
-J J # # # # L
-# # # # # # O
-# L O K # K K
-# # K O # L #
-```
-
-## Move
-
-Start: (1, 3), End: (1, 6), Sacrifice: (3, 0)
-
-```
-# K K O # # L
-# # # # # # #
-O # # # # # #
-# J # # # # L
-# # # # # # O
-# L O K # K K
-# # K O # L #
-```
-
-## Move
-
-Start: (6, 2), End: (6, 5), Sacrifice: (2, 0)
-
-```
-# K K O # # L
-# # # # # # #
-# # # # # # #
-# J # # # # L
-# # # # # # O
-# L O K # K K
-# # # # # # #
-```
-
-## Move
-
-Start: (3, 6), End: (5, 6), Sacrifice: (0, 1)
-
-```
-# # K O # # L
-# # # # # # #
-# # # # # # #
-# J # # # # #
-# # # # # # #
-# L O K # K #
-# # # # # # #
-```
-
-## Move
-
-Start: (5, 1), End: (5, 3), Sacrifice: (5, 5)
-
-```
-# # K O # # L
-# # # # # # #
-# # # # # # #
-# J # # # # #
-# # # # # # #
-# # # # # # #
-# # # # # # #
-```
-
-## Move
-
-Start: (0, 2), End: (0, 6), Sacrifice: (3, 1)
-
-```
-# # # # # # #
-# # # # # # #
-# # # # # # #
-# # # # # # #
-# # # # # # #
-# # # # # # #
-# # # # # # #
+# # # # #
+# # # # #
+# # # # #
+# # # # #
+# # # # #
 ```
 
